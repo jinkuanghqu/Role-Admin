@@ -1,0 +1,226 @@
+[ 2017-09-08T09:17:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018093s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.023264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041482s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0961s ]
+SQL: SELECT * FROM `article` WHERE ( isdisplay = 1 ) ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sql_log` [ RunTime:0.0981s ]
+SQL: INSERT INTO `sql_log` (`module`,`url`,`sql`,`use_time`,`add_time`) VALUES ('Home','Index/index','SELECT * FROM `article` WHERE ( isdisplay = 1 ) ORDER BY sort asc ','0.0014','2017-09-08 09:17:25') [ RunTime:0.0612s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: tdk D:\phpStudy\WWW\myblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 6 行.
+SQL: SHOW COLUMNS FROM `seo` [ RunTime:0.0224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.147357s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011657s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0507s ]
+SQL: SELECT `id`,`pid`,`name` FROM `article_category` WHERE ( pid=11 and is_hide=0 and is_system=1 ) ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.230894s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018285s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.071764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.078458s ]
+SQL: SELECT `id`,`title` FROM `article` WHERE ( isdisplay = 1 ) ORDER BY add_time desc LIMIT 20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.258588s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018849s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.099319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.106550s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018989s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.099319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.106672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.037594s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.025750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.063440s ]
+
+[ 2017-09-08T09:17:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001812s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0299s ]
+SQL: SELECT * FROM `article` WHERE ( isdisplay = 1 ) ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sql_log` [ RunTime:0.0155s ]
+SQL: INSERT INTO `sql_log` (`module`,`url`,`sql`,`use_time`,`add_time`) VALUES ('Home','Index/index','SELECT * FROM `article` WHERE ( isdisplay = 1 ) ORDER BY sort asc ','0.0013','2017-09-08 09:17:40') [ RunTime:0.0506s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined variable: tdk D:\phpStudy\WWW\myblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 6 行.
+SQL: SHOW COLUMNS FROM `seo` [ RunTime:0.0132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0113s ]
+SQL: SELECT `id`,`pid`,`name` FROM `article_category` WHERE ( pid=11 and is_hide=0 and is_system=1 ) ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.042869s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003673s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.018321s ]
+SQL: SELECT `id`,`title` FROM `article` WHERE ( isdisplay = 1 ) ORDER BY add_time desc LIMIT 20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.049095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015113s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.021771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.036144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015308s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.021771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.036317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002854s ]
+
+[ 2017-09-08T09:17:41+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002752s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001795s ]
+
+[ 2017-09-08T09:17:41+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.woff?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001352s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005154s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.002153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003271s ]
+
+[ 2017-09-08T09:17:41+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.ttf?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001273s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003153s ]
+
+[ 2017-09-08T09:17:46+08:00 ] 127.0.0.1 /Public/blogstyle/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001973s ]
+
+[ 2017-09-08T09:30:53+08:00 ] 127.0.0.1 /Public/blogstyle/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000386s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.002705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003832s ]
+

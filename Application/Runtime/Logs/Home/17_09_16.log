@@ -1,0 +1,394 @@
+[ 2017-09-16T14:06:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.083183s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.070768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.154249s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.1234s ]
+SQL: SELECT * FROM `article` WHERE ( isdisplay = 1 ) ORDER BY sort asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sql_log` [ RunTime:0.1067s ]
+SQL: INSERT INTO `sql_log` (`module`,`url`,`sql`,`use_time`,`add_time`) VALUES ('Home','Index/index','SELECT * FROM `article` WHERE ( isdisplay = 1 ) ORDER BY sort asc ','0.0016','2017-09-16 14:06:20') [ RunTime:0.0584s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: tdk D:\phpStudy\WWW\myblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 6 行.
+SQL: SHOW COLUMNS FROM `seo` [ RunTime:0.0521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.314630s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029436s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.1541s ]
+SQL: SELECT `id`,`pid`,`name` FROM `article_category` WHERE ( pid=11 and is_hide=0 and is_system=1 ) ORDER BY sort asc  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.558070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075362s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.200021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.246145s ]
+SQL: SELECT `id`,`title` FROM `article` WHERE ( isdisplay = 1 ) ORDER BY add_time desc LIMIT 20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.685732s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046874s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.343964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.361468s ]
+SQL: SELECT `id`,`title` FROM `article` WHERE ( isdisplay = 1 and is_top = 1 ) ORDER BY add_time desc LIMIT 20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.755354s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046352s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.409352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.426306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046489s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.409352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.426423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035377s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.166519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.202092s ]
+
+[ 2017-09-16T14:06:24+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002015s ]
+
+[ 2017-09-16T14:06:25+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.woff?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002325s ]
+
+[ 2017-09-16T14:06:25+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.ttf?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001935s ]
+
+[ 2017-09-16T14:06:27+08:00 ] 127.0.0.1 /home/category/cateList/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002028s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004117s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0327s ]
+SQL: SELECT * FROM `article` WHERE ( c_id = 9 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sql_log` [ RunTime:0.0171s ]
+SQL: INSERT INTO `sql_log` (`module`,`url`,`sql`,`use_time`,`add_time`) VALUES ('Home','Category/cateList','SELECT * FROM `article` WHERE ( c_id = 9 ) ','0.0014','2017-09-16 14:06:27') [ RunTime:0.0437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: tdk D:\phpStudy\WWW\myblog\Application\Runtime\Cache\Home\ab79cdaf6c45ec7b66deede0fc7cda12.php 第 6 行.
+SQL: SHOW COLUMNS FROM `seo` [ RunTime:0.0727s ]
+SQL: SELECT `title`,`keywords`,`description` FROM `seo` WHERE `page_path` = 'home/category/cateList/id/9.html' LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.267545s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0944s ]
+SQL: SELECT `id`,`pid`,`name` FROM `article_category` WHERE ( pid=11 and is_hide=0 and is_system=1 ) ORDER BY sort asc  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.378707s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015066s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.101890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.116252s ]
+SQL: SELECT `id`,`title` FROM `article` WHERE ( isdisplay = 1 ) ORDER BY add_time desc LIMIT 20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.396870s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008594s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.122357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.130116s ]
+SQL: SELECT `id`,`title` FROM `article` WHERE ( isdisplay = 1 and is_top = 1 ) ORDER BY add_time desc LIMIT 20   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.406658s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006594s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.132816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.138548s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006791s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.132816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.138712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001632s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.004479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006313s ]
+
+[ 2017-09-16T14:45:42+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002004s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002110s ]
+
+[ 2017-09-16T14:45:42+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.woff?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002901s ]
+
+[ 2017-09-16T14:45:42+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.ttf?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000582s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002533s ]
+
+[ 2017-09-16T14:45:53+08:00 ] 127.0.0.1 /home/article/details/id/76.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004616s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0437s ]
+SQL: SELECT * FROM `article` WHERE ( id = 76 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sql_log` [ RunTime:0.0152s ]
+SQL: INSERT INTO `sql_log` (`module`,`url`,`sql`,`use_time`,`add_time`) VALUES ('Home','Article/details','SELECT * FROM `article` WHERE ( id = 76 ) LIMIT 1  ','0.0014','2017-09-16 14:45:52') [ RunTime:0.0817s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined variable: tdk D:\phpStudy\WWW\myblog\Application\Runtime\Cache\Home\f60b866f38264976d0ec31337e66e9ec.php 第 6 行.
+SQL: SHOW COLUMNS FROM `seo` [ RunTime:0.0222s ]
+SQL: SELECT `title`,`keywords`,`description` FROM `seo` WHERE `page_path` = 'home/article/details/id/76.html' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.168556s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`pid`,`name` FROM `article_category` WHERE ( pid=11 and is_hide=0 and is_system=1 ) ORDER BY sort asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.203831s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006207s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.029261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.034475s ]
+SQL: SELECT `id`,`title` FROM `article` WHERE ( isdisplay = 1 ) ORDER BY add_time desc LIMIT 20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.213147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006131s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.038875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.044011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006412s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.038875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.044260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001766s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.002544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004624s ]
+
+[ 2017-09-16T14:45:54+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.woff2?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002569s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001668s ]
+
+[ 2017-09-16T14:45:54+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.woff?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002622s ]
+
+[ 2017-09-16T14:45:54+08:00 ] 127.0.0.1 /Public/blogstyle/fonts/fontawesome-webfont.ttf?v=4.3.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001651s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: Run Home\Behavior\RecordBehavior [ RunTime:0.001528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002493s ]
+
