@@ -1,10 +1,10 @@
 <?php
 return array(
     'DB_TYPE'              => 'mysqli', // 数据库类型
-    'DB_HOST'              => '119.29.238.204', // 服务器地址
-    'DB_NAME'              => 'blog', // 数据库名
-    'DB_USER'              => 'jinkuang', // 用户名
-    'DB_PWD'               => 'jinkuang123', // 密码
+    'DB_HOST'              => '127.0.0.1', // 服务器地址
+    'DB_NAME'              => 'admin', // 数据库名
+    'DB_USER'              => 'root', // 用户名
+    'DB_PWD'               => 'root', // 密码
     'DB_PORT'              => '3306', // 端口
     'DB_PREFIX'            => '', // 数据库表前缀
 
