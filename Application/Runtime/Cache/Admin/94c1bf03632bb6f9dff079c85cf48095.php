@@ -1,9 +1,9 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>后台管理系统</title>
+        <title>金矿-管理系统</title>
         <meta charset="UTF-8">
-        <meta name="keywords" content="我的系统">
+        <meta name="keywords" content="金矿-管理系统">
         <meta name="description" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- intoHead  -->
